@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        do {
+            keuze = prompt("Geef nummer in:\n1. Boog\n2. Zwaard\n3. Kip\n4.vuist");
+        } while (keuze != "1" && keuze != "2" && keuze != "3" && keuze != "4");
+
+        switch (keuze) {
+            case "1":
+                wapenkracht = 5
+                break;
+            case "2":
+                wapenkracht = 10
+                break;
+            case "3":
+                wapenkracht = 90
+                break;
+            case "4":
+                wapenkracht = 0;
+                break;
+
+        }
+        krachtZombie = Math.round(Math.random() * 100)
+        document.write("kracht van zombie is:" + krachtZombie + "<br>")
+        document.write("jouw kracht: " + (50 + wapenkracht) + "<br>")
+        if (krachtZombie <= 50 + wapenkracht) {
+            document.write("Gewonne")
+        } else {
+            document.write("Verloren")
+        }
+    </script>
+</body>
+
+</html>
