@@ -12,7 +12,9 @@
     <script>
         do {
             getal = prompt("Geef getal tussen 1 en 10 in");
-            alert("FOUT");
+            if (getal > 10 || getal < 1) {
+                alert("FOUT");
+            }
         } while (getal > 10 || getal < 1);
         for (i = 0; i < getal; i++) {
             for (j = 0; j < i + 1; j++) {
